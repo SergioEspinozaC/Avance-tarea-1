@@ -1,0 +1,108 @@
+@use 'variables' as vrb;
+
+@mixin fonts($n,$weight,$font){
+    @if($font==Poppins){
+        font-family: 'Poppins', sans-serif;
+    }@else if(font==Raleway){
+        font-family: 'Raleway', sans-serif;
+    }
+
+    font-size: $n+rem;
+
+    @if($weight==regular){
+        font-weight: 400;
+    }@else if($weight==medium){
+        font-weight: 500;
+    }@else if($weight==bold){
+        font-weight: 700;
+    }
+
+    padding-left: 1.5rem;
+}
+
+@mixin buttons($color-bg){
+    display: inline-flex;
+    border: none;
+    @if($color-bg==white){
+        background-color: white;
+        color: vrb.$main-color;
+    }@else{
+        background-color: vrb.$main-color;
+        color: white;
+    }
+    font-weight: 500;
+    border-radius: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: .8 rem;
+    @include margins(2, 0, 0, 1.5);
+    padding: .8rem 2rem; 
+    text-align: center;
+    cursor: pointer;
+}
+
+@mixin margins($n1,$n2,$n3,$n4){
+    margin: $n1+rem $n2+rem $n3+rem $n4+rem;
+}
+
+h1{
+    @include fonts(2,bold,Poppins);
+    padding-top: 1rem;
+    @include margins(0, 0, .2, 0);
+}
+
+h2{
+    @include fonts(1.5,bold,Poppins);
+    padding-top: 2rem;
+    padding-left: 8rem;
+}
+
+h3{
+    @include fonts(1.5,medium,Poppins);
+    @include margins(.2, 0, 0, 0);
+}
+
+.left-bar{
+    border-left: 7px solid vrb.$main-color;
+    height: 215px;
+    @include margins(0, 0, 0, 6);
+}
+
+.description{
+    @include fonts(1, regular, Raleway);
+    color: vrb.$secondary-color;
+    @include margins(.5, 0, 0, 0);
+    line-height: 2.5rem;
+}
+
+.left-button{
+    @include buttons(red);
+}
+
+.right-button{
+    @include buttons(white);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.breakfast{
+    @include fonts(1, bold, Raleway);
+    @include margins(1.5, 0, 0, 0);
+}
+
+.time{
+    @include fonts(1, regular, Raleway);
+    color: vrb.$secondary-color;
+}
+
+.fa-arrow-right-long{
+    font-size: 3rem;
+    color: vrb.$main-color;
+    @include margins(0, 0, 0, 8);
+}
+
+.margin-img{
+   @include margins(0, 0, 0, 8);
+}
+
+.margin-car{
+    @include margins(1, 0, 0, 0);
+ }

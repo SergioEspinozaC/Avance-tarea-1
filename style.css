@@ -1,0 +1,101 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  margin: 0rem 0rem 0.2rem 0rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-left: 8rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  margin: 0.2rem 0rem 0rem 0rem;
+}
+
+.left-bar {
+  border-left: 7px solid #D85A5A;
+  height: 215px;
+  margin: 0rem 0rem 0rem 6rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  color: #9E7474;
+  margin: 0.5rem 0rem 0rem 0rem;
+  line-height: 2.5rem;
+}
+
+.left-button {
+  display: inline-flex;
+  border: none;
+  background-color: #D85A5A;
+  color: white;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8 rem;
+  margin: 2rem 0rem 0rem 1.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.right-button {
+  display: inline-flex;
+  border: none;
+  background-color: white;
+  color: #D85A5A;
+  font-weight: 500;
+  border-radius: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8 rem;
+  margin: 2rem 0rem 0rem 1.5rem;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.breakfast {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0rem 0rem 0rem;
+}
+
+.time {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 1.5rem;
+  color: #9E7474;
+}
+
+.fa-arrow-right-long {
+  font-size: 3rem;
+  color: #D85A5A;
+  margin: 0rem 0rem 0rem 8rem;
+}
+
+.margin-img {
+  margin: 0rem 0rem 0rem 8rem;
+}
+
+.margin-car {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+/*# sourceMappingURL=style.css.map */
