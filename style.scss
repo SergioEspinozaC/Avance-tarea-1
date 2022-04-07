@@ -61,6 +61,11 @@ h3{
     @include margins(.2, 0, 0, 0);
 }
 
+.columns{
+    display: grid;
+    grid-auto-flow: column;
+}
+
 .left-bar{
     border-left: 7px solid vrb.$main-color;
     height: 215px;
@@ -100,9 +105,58 @@ h3{
 }
 
 .margin-img{
-   @include margins(0, 0, 0, 8);
+   @include margins(-6.2, 0, 0, 5);
+   height: 700px;
 }
 
 .margin-car{
-    @include margins(1, 0, 0, 0);
+    @include margins(-5, 0, 0, 0);
+    position: absolute;
+    height: 65px;
+ }
+
+ @media (max-width: 500px){
+
+    h1{
+        @include fonts(2.5,bold,Poppins);
+    }
+
+     h2{
+        @include fonts(4,bold,Poppins);
+        @include margins(0, 0, 0, 3)
+     }
+
+     h3{
+        @include fonts(2,medium,Poppins);
+    }
+
+    .description{
+        @include fonts(1.5, regular, Raleway);
+        line-height: 2.5rem;
+    }
+
+     .left-bar{
+        @include margins(0, 0, 0, 1.5);
+     }
+
+     .columns{
+        display: inline;
+     }
+
+     .breakfast{
+         @include fonts(1.5,bold, Raleway)
+     }
+
+     .margin-img{
+         height: 300px;
+         @include margins(31,0,0,3)
+     }
+
+     .margin-car{
+        @include margins(31, 0, 0, -2);
+     }
+     
+     .time{
+        @include fonts(1.5, regular, Raleway);
+    }
  }
